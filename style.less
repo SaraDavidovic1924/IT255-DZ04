@@ -1,0 +1,74 @@
+@color_1: black;
+@font_family_1: "Times New Roman", Times, serif;
+@background_color_1: white;
+
+div {
+	a {
+		background-image: url("drvo.jpg");
+		text-decoration: none;
+		color: @color_1;
+		font-size: 20px;
+		padding: 15px;
+		display: inline-block;
+	}
+}
+a {
+	font-weight: bold;
+	&:hover {
+		background-color: @background_color_1;
+	}
+}
+ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		&:hover {
+			ul {
+				display: block;
+				background-image: url("drvo.jpg");
+			}
+		}
+		ul {
+			position: absolute;
+			width: 200px;
+			display: none;
+			li {
+				display: block;
+			}
+		}
+	}
+}
+h1 {
+	font-family: @font_family_1;
+	font-size: 50px;
+	font-style: bold;
+}
+#img1 {
+	width: 150px;
+	height: 100px;
+}
+#img2 {
+	width: 150px;
+	height: 100px;
+}
+#img3 {
+	width: 150px;
+	height: 100px;
+}
+#img4 {
+	width: 150px;
+	height: 100px;
+}
+table {
+	border: 1px solid black;
+	width: 100%;
+}
+th {
+	border: 1px solid black;
+	height: 50px;
+}
+td {
+	border: 1px solid black;
+}
